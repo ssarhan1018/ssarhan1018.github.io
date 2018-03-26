@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+
+<title>PC Hardware First page</title>
+
+    <meta charset="utf-8"/>
+    <meta name= "author" content="Sam Sarhan"/>
+    <meta name="news_keywords" content="this is best PC hardware,CPU,laptop,desktop, and motherboards">
+    <meta name="description" content="PC Hardware has been serving in Seattle Washington in the 2 days. We pride our work on providing the best hardware and  products around.">
+    
+	<link rel="stylesheet" href="mypersonalsite.css">
+        
+    <script>
+function startTime() 
+    {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('demo').innerHTML = Date()+ " " +
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+function checkTime(i)
+    {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+     }
+    </script>
+    
+</head>
+    
+<body onload ="startTime()" >
+    
+    
+
+<header>
+<p id="demo"> </p>
+    
+ <a> 
+<img src="_images/logosm.jpg" alt="PChardware" width="354" height="152">
+</a>
+     <div class="text"> 
+    <h1>PC Hardware</h1>
+    <p>Please contact us @ 206-555-1212</p>
+       
+   </div>
+    
+       
+    <nav> 
+        <ul class="nav">
+            <li><a href="website.html">Home</a></li>  
+            <li><a href="component.html">Component</a></li>
+            <li style="float:right"><a class="active" href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+       
+    
+    
+</header>
+
+    
+    
+    <h2>PC Hardware</h2>
+    <p>This your most trust hardware online store for your computer needs wheather for your desktops,or laptops <br> and even accessories and we have top quality products,we can ship the same day.</p>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for components, type CPU...." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="cpu.html">CPU</a></li>
+    
+  <li><a href="memory.html">Memories</a></li>
+
+  <li><a href="motherboard.html">Motherboard</a></li>
+  
+    <li><a href="desktop.html">Desktop</a></li>
+
+  <li><a href="laptop.html#">Laptop</a></li>
+   
+  </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+<section>
+<div class="container">
+    
+  <h3>Hardware components</h3>
+  <p>These are the hardware components that are on the motherboard and more</p>   
+ <a href ="component.html" target ="_blank"> </a>  <img src="_images/Componentsml.jpg" class="simg-rounded" alt="Items of hardware components" > 
+
+  
+
+<figure id = "fig1">
+    <a href="cpu.html" target="_blank">
+        <img src="_images/CPUsml.jpg" alt="The Best CPU" width= "250" height= "228" > </a>
+     <figcaption>Fig1. - A view of the CPU.</figcaption>
+    
+</figure> 
+
+<figure id ="fig2">
+    <a href="memory.html" target="_blank">
+        <img src="_images/memorysml.jpg" alt="The Best Memory" width = "250" height = "228" > </a>
+     <figcaption>Fig2. - A view of the Memory.</figcaption>
+        
+</figure> 
+        
+ <figure id="fig3">
+    <a href="motherboard.html" target="_blank">
+        <img src="_images/motherboardn.jpg" alt="The Best Motherboard">  </a>
+    <figcaption>Fig3. - A view of the Motherboard.</figcaption>
+        
+  </figure> 
+    
+</div>
+ 
+    
+      
+    <h4>What is computer hardware?</h4>
+    
+    <p> Computer hardware is the physical parts or components of a computer, such as the monitor,<br> keyboard, computer data storage, graphic card, sound card and motherboard.</p>
+    <p>A computer system consists of two major elements: hardware and software. Computer hardware is the collection of all the parts you can physically touch. Computer software, on the other hand, is not something you can touch. Software is a set of instructions for a computer to perform specific operations. You need both hardware and software for a computer system to work.
+    Some hardware components are easy to recognize, such as the computer case, keyboard, and monitor. However, there are many different types of hardware components. In this lesson, you will learn how to recognize the different components and what they do.</p>
+    
+        
+    
+ </section>
+ 
+    
+    
+    <footer>
+    Thank you for respecting the Copywright of this site &copy; <a href="mailto:samsar10@hotmail.com"> Please contact me if you have any question </a> December 2017 
+    </footer>
+    
+ 
+      
+</body>   
+    
+</html>
+    
+    
+    
+   
+    
