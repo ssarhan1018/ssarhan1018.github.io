@@ -1,0 +1,153 @@
+body {
+	color: #000000;
+	background-color: #f2ffe3;
+	font: 14pt Georgia, "Times New Roman", Times, serif;
+    margin: 5pt;
+  
+}
+
+header {
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+    top:0;
+}
+
+.text {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    background-color: #76A665;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 60px;
+    text-align: center;
+}
+
+
+
+.logo {
+    margin-right: -20px;
+    padding: 0;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+
+}
+
+header h2 {
+    background-position: top right;
+    text-align: center;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: 40pt Georgia, "Times New Roman", Times, serif;
+    margin: 5pt;
+    background-color: #76A665;
+}
+
+<h4> {
+    font-size:30px;
+    margin: 15pt;
+    margin-bottom: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #225378;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #76A665;
+}
+
+
+.container {
+    display: inline-block;
+        width:100%;
+}
+
+
+#fig1, #fig2,#fig3 {
+    text-align:center;
+    display:inline-block;
+    
+}
+
+#fig1, #fig2, #fig3 {
+    /*padding: 10% 1%;*/
+    margin: auto;
+    text-align: center;
+    display:inline-block;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px; 
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #225378;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+
+}
+
+
+
+section {
+    display: inline-block;
+}
+
+
+
+
