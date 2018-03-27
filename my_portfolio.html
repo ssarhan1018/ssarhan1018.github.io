@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    
+<title>Sam Sarhan</title>
+    
+    
+    <meta charset="utf-8" />
+    <meta name= "author" content="Sam Sarhan" />    
+   <link href="myportfolio.css" rel="stylesheet">
+	
+    
+    <script>
+function startTime() 
+    {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('demo').innerHTML = Date()+ " " +
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+function checkTime(i)
+    {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+     }
+    </script>
+    
+    
+</head> 
+        
+    
+<body onload="startTime()" > 
+    
+<header>
+    
+<p id="demo"> </p>
+<h1> 
+WELLCOME TO SAM SARHAN Page
+</h1>
+    
+<h2 class="date">Course Portfolio</h2>
+
+</header>
+    
+ 
+<nav id="MyNav">
+            
+    
+<ol>   
+<li>
+<a href="labs/style/css_lab.html">Styling_Portolio_Lab</a>
+</li>
+<li>
+<a href="labs/style/css_lab_Ext.html">Styling_Exampl_Lab</a>
+</li>
+
+<li>
+<a href ="html_lab/summer.html">Summer</a>
+</li>
+<li>
+<a href="html_lab/spring.html">Spring.HTM></a>
+</li>
+ <li>
+<a href="labs/prz_formatting/prz_formatting/attorneys.html">CSS Formating</a>
+</li> 
+<li>
+<a href="labs/prz_positioning/practice.html"> CSS_Positioning_lab</a>
+</li>      
+<li>
+<a href="labs/style/css_lab_example.html">CSS_lab_Example</a>
+</li>
+<li>
+<a href="sample_root/rain.html">Sample_Links</a>
+</li>
+<li>
+<a href="labs/css_effects/practice.html"> CSS_Effect_lab</a>
+</li> 
+<li>
+<a href="pwp/Wirefram.html"> Wireframe_lab</a>
+</li> 
+<li>
+<a href="pwp/template.html"> Template_lab</a>
+</li> 
+    
+	<li>
+<a href="pwp/mywebsite/website.html"> Personal Website </a>
+</li> 
+	
+	
+	
+</ol>
+            
+</nav>
+    
+<section id="content"> 
+    
+    <h2> BIT 112 Projects/Lab Assignments</h2>
+
+    <p> My name is Sam, I am student at CC Bothell and I am taking this cours to learn about       more html<br> 
+        and css and other courses to obtain Javascripting certificate. Please take a look at my page<br> 
+        and click the links above. </p>
+	    
+
+    
+</section>
+    
+<footer>
+    <p>Copyright &copy; 2017 by <a href="mailto:samsar10@hotmail.com"> Please contact me if you have any question </a> All rights reserved
+
+</footer>
+
+
+
+</body>
+
+</html>
