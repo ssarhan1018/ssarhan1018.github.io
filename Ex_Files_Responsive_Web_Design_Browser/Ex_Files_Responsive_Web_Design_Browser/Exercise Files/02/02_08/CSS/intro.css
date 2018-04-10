@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+Intro
+--------------------------------------------------------------*/
+
+.intro::before,
+.intro::after {
+    display: block;
+    margin: 3em auto;
+    content: "";
+    width: 20%;
+    border-bottom: 3px solid hsla(0, 0%, 50%, .5);
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-bottom: 1.4em;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.intro-text p {
+    margin-top: 0;
+}

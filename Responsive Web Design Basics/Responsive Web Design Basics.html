@@ -1,0 +1,80 @@
+
+
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+
+    </head>
+    <style>
+        /* Styles applies to all screen*/
+        body { 
+            color:linen;
+         
+            background-color: red;}
+        P>strong{color:fuchsia;}
+        
+        
+        /* Styles applies to tablet screen*/
+        @media screen and (min-width: 550px) {
+            body { background-color: greenyellow;}
+        }
+        p>strong {color:black;}
+        
+        
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+        @media screen and (min-width: 750px) {
+           body { background-color: grey;}
+        }
+        p>strong {color:aqua;}
+        
+        
+        body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+/*  background-color: gray;*/
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+        
+    </style>
+    
+
+    <body>
+  <h1> This is my responsive site testing</h1>   
+    <p>This is <strong>amzingly</strong>BEAUTIFUL</p>
+        
+        <section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">A highly motivated, detail oriented individual, who enjoys challenges in performing software testing, My Experience ensuring quality on assigned projects, applying industry best practices, problem solving, troubleshooting and communicating across stakeholders. Recently updated skills in JavaScript programming and HTML5, seeking full time employment as front-end web developer.</p>
+			
+		</section>
+    
+        
+        <div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+</div>
+        
+        
+        
+    </body>
+</html>
