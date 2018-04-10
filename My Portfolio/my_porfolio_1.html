@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html> 
+<html lang="en"> 
+    
     <head>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,29 +11,9 @@
     </style>
 </head>
     
- <script>
-function startTime() 
-    {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('demo').innerHTML = Date()+ " " +
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-    }
-function checkTime(i)
-    {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-     }
-    </script>
-        
-    
+ 
 
-<body onload ="startTime()" >
+<body>
     
     <h1> WELLCOME TO SAM SARHAN Portfolio Page</h1>
         
