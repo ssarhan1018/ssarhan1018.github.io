@@ -1,5 +1,7 @@
  /* Styles applies to all screen*/
 
+ /* Styles applies to all screen*/
+
 /*body { background: url('images/IMG_4863.JPG')}*/
 
       body { 
@@ -41,6 +43,14 @@ h2 {
          }
 
     
+p {
+    display: block;
+    margin: 2.5em;
+   }
+
+
+
+
 Profile 
  {
        grid-column: 3 ;
@@ -75,7 +85,17 @@ Outline
 
 img {
     image-orientation: from-image;
+    display:block;
+    margin: auto;
+    max-width: 300%;
 }
     
-    
+    <img 
+	srcset="images/IMG_5031_small.JPG  310w, 
+            images/IMG_5031_large.JPG  1240w,
+	        images/IMG_5031_medium.JPG   620w"
+	sizes="(min-width: 41.25em) 38.75em,
+	       calc(100vw - 2.5em)"
+	src="images/IMG_5031_medium.JPG"
+	alt="A crazy quilt whose irregular fabric scraps are fit into a lattice of diamonds." />
     
