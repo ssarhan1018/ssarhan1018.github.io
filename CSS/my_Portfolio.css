@@ -9,8 +9,30 @@
          
             background-color: red;}
         P>strong{color:fuchsia;}
-        
 
+
+ul li {
+    font-size: 1m;
+    position: relative;
+    float: left;
+    width: 5%;
+    height: 2%;
+/*    padding: .65em;*/
+    margin: .25em 0;
+    text-align: center;
+}
+
+
+ li.active {
+    background: #000;
+    color: #fff;
+/*
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;       
+*/
+}
 
 h1 {
 /*    background-color: blue;*/
@@ -98,3 +120,108 @@ img {
 	       calc(100vw - 2.5em)"
 	src="images/IMG_5031_medium.JPG"
 	alt="A crazy quilt whose irregular fabric scraps are fit into a lattice of diamonds." />
+
+
+.svg {
+  width: 100%;
+  height: auto;
+}
+
+You can also set the fill value of a path in CSS, like you would any other attribute.
+
+.svg path {
+  fill: #000;
+}
+
+.building-flames path {
+  fill: #ff0000;
+}
+
+<g class="ufo-building-float">
+  <g class="building">
+    ...
+  </g>
+  <g class="ufo-big">
+    ...
+  </g>
+  <g class="ufo-small">
+    ...
+  </g>
+</g>
+
+@keyframes ufo-building-float {
+  0%   {transform: translateY(0)}
+  25%  {transform: translateY(-25px)}
+  75%  {transform: translateY(25px)}
+  100% {transform: translateY(0)}
+}
+
+.ufo-building-float {
+  animation: ufo-building-float 5s linear infinite;
+}
+
+@keyframes ufo-big {
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}
+
+@keyframes ufo-small {
+  0%, 10%  {opacity: 0}
+  25%, 85% {opacity: 1}
+  100%     {opacity: 0}
+}
+
+.ufo-big {
+  animation: ufo-big 5s ease infinite;
+}
+
+.ufo-small {
+  animation: ufo-small 5s ease infinite;
+}
+
+<g class="ufo-big">
+  <g class="ufo-big-lights">
+    <path class="ufo-big-lights-light ufo-big-lights-light--1" d="..."/>
+    <path class="ufo-big-lights-light ufo-big-lights-light--2" d="..."/>
+    ...
+  </g>
+</g>
+
+/*Create the keyframe animation.*/
+
+@keyframes ufo-big-lights {
+  0%        {fill: #000}
+  20%       {fill: #fbcb43}
+  40%, 100% {fill: #000}
+}
+
+.ufo-big-lights-light {
+  animation: ufo-big-lights 2.5s ease infinite;
+}
+
+.ufo-big-lights--2 {animation-delay: .2s}
+.ufo-big-lights--3 {animation-delay: .4s}
+.ufo-big-lights--4 {animation-delay: .6s}
+.ufo-big-lights--5 {animation-delay: .8s}
+
+@keyframes building-flames {
+  0%   {transform: scale(1, 1)}
+  50%  {transform: scale(1, 1.1)}
+  100% {transform: scale(1, 1)}
+}
+
+.building-flames path {
+  fill: #d84437;
+  animation       : building-flames .15s ease infinite;
+  transform-origin: center top;
+}
+
+<svg class="svg ufo-building" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450 250" enable-background="new 0 0 450 250" xml:space="preserve">
+  <g class="ufo-building">
+    <path d="M295.7,201.3l-1..."/>
+  </g>
+  ...
+  <image src="ufo-building-static.jpg" class="svg-fallback">
+</svg>
+
