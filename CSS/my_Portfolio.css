@@ -26,12 +26,7 @@ ul li {
  li.active {
     background: #000;
     color: #fff;
-/*
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;       
-*/
+
 }
 
 h1 {
@@ -91,6 +86,15 @@ Outline
   flex-wrap: wrap;
   padding: 0 4px;
 }
+
+.fonts
+{ 
+font-size:48px;
+color:red;    
+content:"\f0e1";
+text-align: center;
+}
+
 
 /* Create two equal columns that sits next to each other */
 .column {
