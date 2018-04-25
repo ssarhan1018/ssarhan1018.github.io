@@ -1,0 +1,64 @@
+/* Styles applies to all screen*/
+        body { 
+         
+            background-color: lightgreen;}
+                
+        /* Styles applies to tablet screen*/
+        @media screen and (min-width: 450px) {
+/*            body { background-color: greenyellow;}*/
+        }
+                
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+        @media screen and (min-width: 650px) {
+/*           body { background-color: grey;}*/
+        }
+            
+/*@media screen and (touch-enabled),(-webkit-touch-enabled),(-moz-touch-enabled),(-o-touch-enabled),(-ms-touch-enabled),(modernizr){#touch{top:9px;position:absolute}}*/
+        
+        body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+/*  background-color: gray;*/
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #225378;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
