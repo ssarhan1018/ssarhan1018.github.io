@@ -4,11 +4,7 @@
 
 /*body { background: url('images/IMG_4863.JPG')}*/
 
-      body { 
-            color:darkblue;
-         
-            background-color: red;}
-        P>strong{color:fuchsia;}
+     
         
 
 
@@ -27,24 +23,9 @@ h2 {
     margin: 10px;
     font-weight: bold;
 }
-        /* Styles applies to tablet screen*/
-        @media screen and (min-width: 500px) {
-            body { background-color: greenyellow;}
-        }
-        p>strong {color:black;}
         
-        
-        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
-        @media screen and (min-width: 700px) {
-           body { background-color: grey;}
-        }
-        p>strong {color:aqua;
-           margin:15px;
-         }
-
-    
 p {
-    display: block;
+    display: inherit;
     margin: 2.5em;
    }
 
@@ -98,3 +79,34 @@ img {
 	       calc(100vw - 2.5em)"
 	src="images/IMG_5031_medium.JPG"
 	alt="A crazy quilt whose irregular fabric scraps are fit into a lattice of diamonds." />
+
+
+
+
+
+ body { 
+            color:darkblue;
+         
+            background-color: red;
+          width:100%
+              }
+/*        P>strong{color:fuchsia;}*/
+
+/* Styles applies to tablet screen*/
+        @media screen and (min-width: 500px) {
+            body { background-color: greenyellow;}
+            width: 50%;
+        }
+/*        p>strong {color:black;}*/
+        
+        
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+        @media screen and (min-width: 700px) {
+           body { background-color: grey;}
+        }
+/*        p>strong {color:aqua;*/
+           margin:15px;
+        width: 33%;
+         }
+
+    
