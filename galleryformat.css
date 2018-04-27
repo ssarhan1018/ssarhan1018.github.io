@@ -48,7 +48,7 @@ li a {
         body { 
          
             background-color: lightgreen;
-            width:100%;
+            width:96%;
 }
                 
         /* Styles applies to tablet screen*/
@@ -70,12 +70,14 @@ li a {
 
 
 
+/*
 img {
     image-orientation: from-image;
     display:block;
     margin: auto;
     max-width: 300%;
 }
+*/
 
 <img 
 	srcset="images/IMG_5031_small.JPG , 
