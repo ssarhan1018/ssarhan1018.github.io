@@ -89,30 +89,5 @@ img {
 	alt="A crazy quilt whose irregular fabric scraps are fit into a lattice of diamonds." />
 
 
-body{
-    background-color:#000;
-}
-#demo {
-    width: 692px;
-    height: 70px;
-    background-color: #333;
-    padding: 8px;
-}
 
-.picture {
-    position: relative;
-    width: 150px;
-    height: 60px;
-    background: grey url(images/logo_transparent.png) no-repeat;
-    color: #000;    
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: solid #000 10px;
-}
-/*
-#logo p {
-    margin-top: 0px;
-    margin-left: 50px;
-    line-height: 60px;
-}
-*/
 
