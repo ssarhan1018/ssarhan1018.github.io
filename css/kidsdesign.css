@@ -1,0 +1,196 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body
+{
+   background-color: aliceblue;
+    background-image: url(/images/landing-bg.jpg);
+/*    display:block;*/
+/*    width:100%;*/
+/*    height: 100%;*/
+/*    margin-left: 30px;*/
+    font-family:fantasy, bold;
+   /* font-size: em;*/
+    text-align: center;
+    margin: 40px;
+}
+
+/*header, footer*/
+header
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+/*    background: #555;*/
+}
+
+header h1
+{
+/*    color: #AAA;*/
+    font-size: 30px;
+/*    font-weight: lighter;*/
+    margin-bottom: 5px;
+}
+
+header span
+{
+    color: green;
+    width:60%;
+}
+
+
+nav {
+    background-image: url("/images/home1.jpg");
+    width:100%;
+    font-size: 20px;
+    
+}
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+th {
+    font-size: 6em;
+/*   background-color: bisque;*/
+   width:100%;*/
+/*    float: left;*/
+   text-align: center;
+    
+}
+
+table{
+    width:%;
+    height: 80%;
+    padding-right: 30px; 
+    
+}
+
+
+
+/*============================================================*/
+
+
+
+
+
+
+
+@-webkit-keyframes image1 {
+    from { border:0  ; padding:none; }
+    to { border:10px; float:right; position:relative; }
+    
+}
+
+
+td {
+
+/*
+    width:1%;
+    height:30px;
+*/
+
+    border-style:solid; /* If you remove this, it won't work! */
+    padding: 70px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color:black;
+    -webkit-animation:1s image1 infinite alternate;
+
+}
+
+
+footer span
+{
+  color: black;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+div.container
+{
+/*    font-family: Raleway;*/
+    margin:auto;
+	text-align: center;
+    width:60%;
+    background-image: url(images/nav.jpg);
+/*    background-color: aqua;*/
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 10px 10px;
+    padding: 1px 1px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+
+/*
+.lightGreen
+{
+    background-color: #8bc34a;
+    width:50%;
+}
+*/
+
+
+
+/* Pull down  */
+div.pullDown a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullDown a:hover:before
+{
+    height: 100%;
+}
+
+
+
+/* Styles applies to all screen*/
+/*        body { */
+         
+/*            background-color: lightgreen;*/
+            width:96%;
+}
+                
+        /* Styles applies to tablet screen*/
+        @media screen and (min-width: 400px) {
+/*            body { background-color: greenyellow;}*/
+            width:50%;
+        }
+                
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+        @media screen and (min-width: 720px) {
+/*           body { background-color: grey;}*/
+            width:33%;
+        }
+            
+        
+/*
+        body {
+  margin: 40px;
+}
+*/
+
+/*============================================================*/
+
