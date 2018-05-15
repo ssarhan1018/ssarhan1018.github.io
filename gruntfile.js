@@ -17,30 +17,30 @@ module.exports = function(grunt) {
         *Montor files and execute taask:
         *https://www.npmjs.com/package/bearcat-grunt-contrib-watch
         */
-//        watch: {
-//            sass: {
-//             
-//                files: [
-//                    'assets/scss/*.scss'
-//                    
-//                ],
-//                tasks: [
-//                    'sass'
-//                ]
-//            },
-//            scripts: {
-//             
-//                files: [
-//                    'assets/js/*.js'
-//                    
-//                ],
-//                tasks: [
-//                    'uglify'
-//                ]
-//            }
-//                
-//                
-//        },
+        watch: {
+            sass: {
+             
+                files: [
+                    'assets/scss/*.scss'
+                    
+                ],
+                tasks: [
+                    'sass'
+                ]
+            },
+            scripts: {
+             
+                files: [
+                    'assets/js/*.js'
+                    
+                ],
+                tasks: [
+                    'uglify'
+                ]
+            }
+                
+                
+        },
         
         /**
         * Grunt Contrib uglify
@@ -48,31 +48,31 @@ module.exports = function(grunt) {
         *https://www.npmjs.com/package/grunt-contrib-uglify
         */
         
-//        uglify: {
-//            my_target:{
-//                files: {
-//                    'js/scripts.js': 'assets/js/scripts.js','node_modules/jquery/jquery.js'
-//                    
-//                        }
-//                    
-//                     }
-//               },
-//        
+        uglify: {
+            my_target:{
+                files: {
+                    'js/scripts.js': 'assets/js/scripts.js','node_modules/jquery/jquery.js'
+                    
+                        }
+                    
+                     }
+               },
+        
         /**
         * Grunt Contrib jshint
         *Montor files and execute taask:
         *https://www.npmjs.com/package/grunt-contrib-jshint
         */
         
-//        jshint: {
-//            files : ["*.js", "assets/js/*.js"],
-//            options: {
-//                esnext: true,
-//                globals:{
-//                    jQuery: true
-//                }
-//            }
-//        },
+        jshint: {
+            files : ["*.js", "assets/js/*.js"],
+            options: {
+                esnext: true,
+                globals:{
+                    jQuery: true
+                }
+            }
+        },
         
         
         /**
