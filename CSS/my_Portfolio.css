@@ -1,0 +1,204 @@
+ /* Styles applies to all screen*/
+
+ /* Styles applies to all screen*/
+
+/*body { background: url('images/IMG_4863.JPG')}*/
+
+     
+        
+
+
+h1 {
+/*    background-color: blue;*/
+    padding-top: 10px;  
+    background-color: #76A665;
+    text-align: center;
+   }
+        
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: bold;
+}
+        
+p {
+    display: inherit;
+    margin: 2.5em;
+   }
+
+
+#myprofile_cloud{
+    width:inherit;
+    height: inherit;
+    top: 0px;
+    left:0px;
+    background-repeat: repeat-x;
+    
+}
+width:
+
+Profile 
+ {
+       grid-column: 3 ;
+		grid-row: 5 / span 4;
+/*        grid-gap: 5px;*/
+        font-size: 2.5em;
+	}
+Outline
+{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+   
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+/*    width: 0 auto;*/
+  vertical-align: inherit;
+}
+    
+
+
+
+
+/*
+ body { 
+            color:darkblue;
+         
+            background-color: red;
+          width:100%
+              }
+*/
+/*        P>strong{color:fuchsia;}*/
+
+/* Styles applies to tablet screen*/
+/*
+        @media screen and (min-width: 500px) {
+            body { background-color: greenyellow;}
+            width: 50%;
+        }
+*/
+/*        p>strong {color:black;}*/
+        
+        
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+/*
+        @media screen and (min-width: 700px) {
+           body { background-color: grey;}
+        }
+*/
+/*        p>strong {color:aqua;*/
+/*
+           margin:15px;
+        width: 33%;
+         }
+*/
+
+    img {
+    position: relative;
+/*
+	width: 150px;
+	height: 60px;
+*/
+	background: #90E500 url(../images/IMG_5031_small.JPG) no-repeat;
+	background-position: 0px 4px;
+	color: #000;	
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: solid #000 10px;
+    
+}
+
+#picture {
+    position: relative;
+/*
+	width: 150px;
+	height: 60px;
+*/
+	background: #90E500 url(../images/IMG_5031_small.JPG) no-repeat;
+	background-position: 0px 4px;
+	color: #000;	
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: solid #000 10px;
+    
+}
+    
+    <img 
+	srcset="images/IMG_5031_small.JPG , 
+            images/IMG_5031_large.JPG ,
+	        images/IMG_5031_medium.JPG "
+	sizes="(min-width: 41.25em) 38.75em,
+	       calc(100vw - 2.5em)"
+	src="images/IMG_5031_medium.JPG"
+	alt="A crazy quilt whose irregular fabric scraps are fit into a lattice of diamonds." />
+
+
+============================================
+/*
+.body {
+	background-color:#000;
+}
+*/
+
+#demo {
+	width: 692px;
+	height: 70px;
+	background-color: #333;
+	padding: 8px;
+}
+/*
+#logo {
+	position: relative;
+	width: 150px;
+	height: 60px;
+	background: #90E500 url(../images/IMG_5031_small.JPG) no-repeat;
+	background-position: 0px 4px;
+	color: #000;	
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: solid #000 10px;
+}
+#logo p {
+	font-size:18px;
+	margin-top: 0px;
+	margin-left: 40px;
+	line-height: 58px;
+}
+*/
+
+body { 
+            color:darkblue;
+         
+            background-color: red;
+          width:100%
+              }
+/*        P>strong{color:fuchsia;}*/
+
+/* Styles applies to tablet screen*/
+        @media screen and (min-width: 500px) {
+            body { background-color: greenyellow;}
+            width: 50%;
+        }
+/*        p>strong {color:black;}*/
+        
+        
+        /* Styles applies to desktop screen and screen and only for printing to printer or non screen reader*/
+        @media screen and (min-width: 700px) {
+           body { background-color: grey;}
+        }
+/*        p>strong {color:aqua;*/
+           margin:15px;
+        width: 33%;
+}
