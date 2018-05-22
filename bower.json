@@ -1,0 +1,22 @@
+{
+  "name": "Techshops",
+  "description": "This is a simple project",
+  "main": "index.html",
+  "authors": [
+    "Sam Sarhan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ssarhan1018/ssarhan1018.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "susy": "^3.0.5",
+    "bourbon": "^5.0.0",
+    "normalize-css": "^8.0.0"
+  }
+}
