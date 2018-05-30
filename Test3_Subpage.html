@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>A context-shift transition inspired by iOS</title>
+
+		<meta name="description" content="A context-shift transition inspired by iOS. Created using JavaScript(context.js), CSS 3D transforms and CSS Animations.">
+		<meta name="author" content="Sam Sarhan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/test3.css">
+
+	</head>
+	<body>
+            
+        <nav> 
+        <ul class="nav">
+<!--            <li><a href="test3.html">Home</a></li>  -->
+            <li style="float:center"><a class="active" href="test3.html">Previous</a></li>
+        </ul>
+    </nav>
+        
+
+        
+		<article class="context">
+			<div class="layer one show">
+                <img class="image1" src="images/1513199871601.jpg" />
+<!--				<h2>SamOne</h2>-->
+				<p>Use the dots below or your keyboard arrows.</p>
+
+			</div>
+			<div class="layer two">
+<!--				<h2>SamTwo</h2>-->
+                <img class="image1" src="images/BMW-TA.jpg" />
+			</div>
+			<div class="layer three">
+                <img class="image1" src="images/Gerbera_Flower_Farm_Mix_500.jpg" />
+<!--				<h2>SamThree</h2>-->
+			</div>
+            <div class="layer four">
+<!--				<h2>Samfour</h2>-->
+                <img class="image1" src="images/IMG_1007.JPG" />
+			</div>
+		</article>
+
+		<ul class="bullets"></ul>
+
+		<script src="js/test3.js"></script>
+		<script>
+			// Create a new instance of context
+			var k = context( document.querySelector( '.context' ) );
+			
+			var bulletsContainer = document.body.querySelector( '.bullets' );
+			// Create one bullet per layer
+			for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+				var bullet = document.createElement( 'li' );
+				bullet.className = i === 0 ? 'active' : '';
+				bullet.setAttribute( 'index', i );
+				bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bulletsContainer.appendChild( bullet );
+			}
+			// Update the bullets when the layer changes
+			k.changed.add( function( layer, index ) {
+				var bullets = document.body.querySelectorAll( '.bullets li' );
+				for( var i = 0, len = bullets.length; i < len; i++ ) {
+					bullets[i].className = i === index ? 'active' : '';
+				}
+			} );
+			document.addEventListener( 'keyup', function( event ) {
+				if( event.keyCode === 37 ) k.prev();
+				if( event.keyCode === 39 ) k.next();
+			}, false );
+			var touchX = 0;
+			var touchConsumed = false;
+			document.addEventListener( 'touchstart', function( event ) {
+				touchConsumed = false;
+				lastX = event.touches[0].clientX;
+			}, false );
+			document.addEventListener( 'touchmove', function( event ) {
+				event.preventDefault();
+				if( !touchConsumed ) {
+					if( event.touches[0].clientX > lastX + 10 ) {
+						k.prev();
+						touchConsumed = true;
+					}
+					else if( event.touches[0].clientX < lastX - 10 ) {
+						k.next();
+						touchConsumed = true;
+					}
+				}
+			}, false );
+		</script>
+
+		<script>!function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</body>
+</html>
