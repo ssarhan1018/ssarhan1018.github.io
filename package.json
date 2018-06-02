@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "js-library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssarhan1018/ssarhan1018.github.io.git"
+  },
+  "author": "sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssarhan1018/ssarhan1018.github.io/issues"
+  },
+  "homepage": "https://github.com/ssarhan1018/ssarhan1018.github.io#readme"
+}
