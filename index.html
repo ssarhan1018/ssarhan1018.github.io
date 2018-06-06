@@ -3,109 +3,50 @@
    
     
     <head>
-        <title> Protfolio Design Garllery </title>
+
+        <link rel="icon" href="images/portfolio.png" type="images/x-icon">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/my_Portfolio.css">
         
-        <ul>
-    <li class="fontawesome-arrow-left active" data-text="arrow-left"></li>
-    </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
         
-    <style>
+       <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
         
-    </style>
-</head>
-    
- 
-
-<body>
-    
-
-<h1> WELCOME TO SAM SARHAN Portfolio Page</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <h2> BIT 175 Course</h2> 
+        <link rel="stylesheet" href="new_design.css"> 
+<!--        <link rel="stylesheet" href="new_design.js"> -->
+        <link rel="stylesheet" href="about.html"> 
         
+    </head>
+    <body>
     
-    
-    <nav> 
-        <ul class="nav">
-            <li><a href="images/IMG_4811-large.JPG">Home</a></li>
-            
-            <li><a class="active" href="images/IMG_4860.JPG">About</a></li>
-            
-            <li><a href="https://ssarhan1018.github.io/test2.html">Gallery Design</a></li>
-            
-            <li><a href="https://ssarhan1018.github.io/kidsdesign.html">Kids Design</a></li>
-            
-           <li><a href="http://ssarhan1018.github.io/Test3.html">Inspirational Design</a></li>
-            
-            
-
-            
-            
-        </ul>
-    </nav>
-    <br>
-    
-    
-
-    <div class="Profile" > </div> 
-                  
-<div class ="Outline">
-    
-<h3>Summary &amp; Outline</h3>
-    <p1>Hi All
-    My name is Sam and this is my portfolio for Bit-175 that I am taking in spring quarter of 2018!</p1>
-    </div> <br>
-		
-    
-<!--
-<picture>
-          <img src="images/IMG_5031_small.JPG" alt="My portfolio">
-           <p1>Hello from Disneyland</p1>
- </picture>
--->
-
-
-<img 
-     srcset="IMG_5031_small.JPG ,
-                     IMG_5031_medium.JPG ,
-                     IMG_5031_large.JPG " 
-     sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" 
-     src="images/IMG_5031_large.JPG">
-             
-             
-         
-<!--
-
-        <img src="images/IMG_5031_Large.JPG" alt="an image"> 
-                 
--->
-    
-    <div id="demo">
-	<div id="picture">
-        <img src="images/IMG_5031_small.JPG" alt="My portfolio">
-    </div> 
+                
+        <h1> Sam Sarhan Portfolio</h1>
+        
+<!--             <h2> BIT 175 Course</h2>-->
+        
+       <div class="wrapper">
+      
+<!--   <button class="btn"><i class="fa fa-home"></i></button>-->
+           
+     <div class="box a"><a href="new_design.html"><i i class="fa fa-home"></i>HOME</a></div>
+     
+     
+     <div class="box b"><a href="about.html"><i class="fa fa-folder"></i>About</a></div>
+     <div class="box c"><a href="https://ssarhan1018.github.io/test2.html">Gallery Design</a></div>
+     <div class="box d"><a href="https://ssarhan1018.github.io/kidsdesign.html">Kids Design</a></div>
+     <div class="box e"><a href="http://ssarhan1018.github.io/Test3.html">Inspirational Design</a></div>
 </div>
-
-<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
-<script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
-
-  <script>
-//we'll use a window.onload for simplicity, but typically it is best to use either jQuery's $(document).ready() or $(window).load() or cross-browser event listeners so that you're not limited to one.
-    window.onload = function() {
-	var picture = document.getElementById("picture");
-	TweenLite.to(picture, 2, {left:"532px", repeat:2});
-}
-
     
-    </script>
-    
- 
     
 
-             
-             
-    </body>
+        
+
+       
+</body>
+    
 </html>
