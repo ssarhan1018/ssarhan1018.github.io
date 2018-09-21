@@ -74,20 +74,20 @@ p1 {
 
 
 
-    .a {
+  .a {
 		grid-column: 1 / 1;
 		grid-row: ;
         
 	}
 
 	.e {
-		grid-column: 1 /  ;
+		grid-column: 2 / 1 ;
 		grid-row:   ;
 
 	}
 
 	.c {
-		grid-column: 2 / 1 ;
+		grid-column: 2 / 3 ;
 		grid-row: row ;
 	}
 	.d {
@@ -95,10 +95,10 @@ p1 {
 		grid-row: ;
 	}
      .b {
-		grid-column: col 1 /2 ;
+		grid-column: col 1 /3 ;
 		grid-row: row;
 	   }
-*/
+
 
 
 
